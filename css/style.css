@@ -1,7 +1,24 @@
 body {
-    color: #B8B08D;
+    color: #283845;
     background: #F29559;
     font-family: 'Nunito Sans', sans-serif;
+}
+
+/* a {
+    color: #202C39;
+    transition: all .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #F29559;
+    outline: none;
+    text-decoration: none;
+} */
+
+.btn:focus {
+    box-shadow: none;
 }
 
 
@@ -106,7 +123,7 @@ body {
         width: 100%;
         height: 30px;
         background: #94a558;
-        /* z-index: 1; */
+        z-index: 1;
     }
 
     .wrapper .content::before {
@@ -123,8 +140,7 @@ body {
         height: 100%;
         margin-left: -250px;
         /* float: left; */
-        /* z-index: 2; */
-        z-index: 1;
+        z-index: 2;
 
     }
 
@@ -242,4 +258,269 @@ body {
     .wrapper .content {
         padding: 30px 0px 30px 30px;
     }
+}
+
+/**********************************/
+/*********** Header CSS ***********/
+/**********************************/
+.header {
+    position: relative;
+    background: #ffffff;
+}
+
+.header .content-inner {
+    padding: 100px 30px;
+    background: url(../img/header.png) 95% bottom no-repeat;
+    background-size: contain;
+}
+
+.header p {
+    color: #F29559;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    color: #202C39;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.header h2 {
+    display: inline-block;
+    margin: 0;
+    /* height: 25px; */
+    font-size: 25px;
+    color: #F2D492;
+}
+
+.header .typed-text {
+    display: none;
+}
+
+.header .typed-cursor {
+    font-size: 25px;
+    font-weight: 300;
+    color: #202C39;
+}
+
+.large-btn .content-inner {
+    /* 處理子元素內物件有預設縫隙的問題，避免自動換行 */
+    font-size: 0;
+    border-bottom: 30px solid #F29559;
+}
+
+.large-btn .btn {
+    position: relative;
+    width: 50%;
+    padding: 15px 0;
+    color: #F2D492;
+    font-size: 20px;
+    font-weight: 600;
+    background: #202C39;
+    border-radius: 0;
+}
+
+.large-btn .btn:last-child {
+    color: #202C39;
+    background: #F2D492;
+}
+
+.large-btn .btn i {
+    margin-right: 8px;
+}
+
+/* hover前的after元素width=0看不到 */
+.large-btn .btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+/* hover後的after元素width=100%刷出來*/
+.large-btn .btn:hover::after {
+    width: 100%;
+    background: rgba(255, 255, 255, .1);
+}
+
+/**********************************/
+/******* Content Header CSS *******/
+/**********************************/
+.content-header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.content-header h2 {
+    color: #202C39;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+/* 任意長度的底線 */
+.content-header::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    bottom: 0;
+    /* left: 0; */
+    background: #F29559;
+}
+
+
+/**********************************/
+/*********** About CSS ************/
+/**********************************/
+.about {
+    position: relative;
+    padding: 60px 30px;
+    background: #ffffff;
+    border-bottom: 30px solid #F29559;
+}
+
+
+.about img {
+    width: 100%;
+    height: auto;
+}
+
+/* @media(max-width: 767.98px) {
+    .about img {
+        margin-bottom: 15px;
+    }
+} */
+
+.about .btn {
+    font-weight: 700;
+    border-radius: 0;
+    color: #202C39;
+    background: #F29559;
+    transition: all .3s;
+}
+
+.about .btn:hover {
+    color: #F29559;
+    background: #202C39;
+}
+
+.about .skills {
+    /* padding-top: 15px; */
+}
+
+.about .skill-name {
+    margin-top: 15px;
+}
+
+.about .skill-name p {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* 靠右對齊 */
+.about .skill-name p:last-child {
+    float: right;
+}
+
+.about .progress {
+    height: 5px;
+    border: 1px solid #F29559;
+    border-radius: 0;
+    background: #ffffff;
+}
+
+.about .progress .progress-bar {
+    /* 必須先給個初始長度 */
+    width: 1px;
+    background-color: #F29559;
+    border-radius: 0;
+    transition: 1s;
+}
+
+/**********************************/
+/********* Education CSS **********/
+/**********************************/
+.education {
+    position: relative;
+    padding: 60px 30px;
+    background: #ffffff;
+    border-bottom: 30px solid #F29559;
+}
+
+.education .edu-col {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid #F29559;
+    border-bottom: 1px solid #F29559;
+}
+
+.education .col-md-6:first-child .edu-col {
+    padding-top: 0;
+}
+
+.education .col-md-6:last-child .edu-col {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+
+    /* 前兩個div */
+    .education .col-md-6:nth-child(-n+2) .edu-col {
+        padding-top: 0;
+    }
+
+    /* 倒數兩個div */
+    .education .col-md-6:last-child .edu-col,
+    .education .col-md-6:nth-last-child(2) .edu-col {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+.education .edu-col span {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* 製作日期左邊的時間點 */
+.education .edu-col span::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: #F29559;
+    top: 5px;
+    left: -26px;
+    border-radius: 5px;
+}
+
+.education .edu-col span i {
+    color: #F29559;
+}
+
+.education .edu-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.education .edu-col p {
+    margin: 0;
 }
