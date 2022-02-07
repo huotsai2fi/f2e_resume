@@ -20,4 +20,46 @@ $(function () {
     },
     { offset: "80%" }
   );
+
+  // Porfolio isotope and filter
+  var portfolioIsotope = $(".portfolio-container").isotope({
+    itemSelector: ".portfolio-item",
+    layoutMode: "fitRows",
+    transitionDuration: "0.6s",
+  });
+
+  $("#portfolio-filters li").on("click", function () {
+    $("#portfolio-filters li").removeClass("filter-active");
+    $(this).addClass("filter-active");
+
+    portfolioIsotope.isotope({ filter: $(this).data("filter") });
+  });
+
+  // Back to top button
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".back-to-top").fadeIn("slow");
+    } else {
+      $(".back-to-top").fadeOut("slow");
+    }
+  });
+  $(".back-to-top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
+    return false;
+  });
+
+  // Smooth scrolling on the navbar links
+  $(".navbar-nav a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      $("html, body").animate(
+        {
+          scrollTop: $(this.hash).offset().top - 30, //scroll至該id元素在document中的位置再往上30px
+        },
+        500,
+        "easeInOutExpo"
+      );
+    }
+  });
 });
