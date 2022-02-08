@@ -39,14 +39,12 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 15px;
-    /* float: left; */
     background: #F2D492;
 }
 
 .wrapper .sidebar {
     position: relative;
     width: 100%;
-    /* float: left; */
     background: #283845;
 }
 
@@ -63,7 +61,6 @@ a:focus {
 
 .navbar {
     padding: 15px;
-    /* background: #222222 !important; */
 }
 
 .navbar-expand-md .navbar-nav .nav-item {
@@ -111,7 +108,6 @@ a:focus {
         position: relative;
         width: calc(100% - 50px);
         margin-left: 50px;
-        /* float: right; */
     }
 
     .wrapper .content::before,
@@ -137,7 +133,6 @@ a:focus {
         width: 300px;
         height: 100%;
         margin-left: -250px;
-        /* float: left; */
         z-index: 2;
 
     }
@@ -165,7 +160,6 @@ a:focus {
     }
 
     .wrapper .sidebar:hover .sidebar-header {
-        /* position: relative; */
         display: block;
         width: 100%;
     }
@@ -181,25 +175,14 @@ a:focus {
         position: fixed;
         bottom: 0;
         padding: 20px;
-        /* font-size: 0; */
-        /* text-align: center; */
         background: #202C39;
     }
 
     .wrapper .sidebar .sidebar-footer a {
-        /* display: inline-block; */
-        /* width: 40px;
-        height: 40px; */
         padding: 5px 10px;
-        /* margin: 0 15px 15px 0; */
-        /* text-align: center; */
         font-size: 20px;
         color: #202C39;
         background: #F29559;
-    }
-
-    .wrapper .sidebar .sidebar-footer a:last-child {
-        /* margin-right: 0; */
     }
 
     .wrapper .sidebar .sidebar-footer a:hover {
@@ -213,7 +196,6 @@ a:focus {
 
     .navbar {
         padding: 15px 0;
-        /* flex-direction: column; */
     }
 
     .navbar .navbar-brand {
@@ -288,7 +270,6 @@ a:focus {
 .header h2 {
     display: inline-block;
     margin: 0;
-    /* height: 25px; */
     font-size: 25px;
     color: #F2D492;
 }
@@ -372,7 +353,6 @@ a:focus {
     width: 50px;
     height: 3px;
     bottom: 0;
-    /* left: 0; */
     background: #F2D492;
 }
 
@@ -393,12 +373,6 @@ a:focus {
     height: auto;
 }
 
-/* @media(max-width: 767.98px) {
-    .about img {
-        margin-bottom: 15px;
-    }
-} */
-
 .about .btn {
     font-weight: 700;
     border-radius: 0;
@@ -410,10 +384,6 @@ a:focus {
 .about .btn:hover {
     color: #F29559;
     background: #202C39;
-}
-
-.about .skills {
-    /* padding-top: 15px; */
 }
 
 .about .skill-name {
@@ -684,7 +654,6 @@ a:focus {
 }
 
 .portfolio .portfolio-item figure {
-    /* background: #ffffff; */
     overflow: hidden;
     height: 220px;
     position: relative;
@@ -715,7 +684,6 @@ a:focus {
 .portfolio .portfolio-item figure .link-details,
 .portfolio .portfolio-item figure .portfolio-title {
     position: absolute;
-    /* display: inline-block; */
     opacity: 0;
     line-height: 1;
     text-align: center;
@@ -767,10 +735,6 @@ a:focus {
     border-radius: 0;
 }
 
-.portfolio .portfolio-item figure .portfolio-title:hover {
-    /* text-decoration: none; */
-}
-
 .portfolio .portfolio-item figure .portfolio-title span {
     display: block;
     margin-top: 10px;
@@ -798,13 +762,11 @@ a:focus {
 /*********** Contact CSS ***********/
 /**********************************/
 .contact {
-    /* position: relative; */
     padding: 60px 30px 30px 30px;
     background: #ffffff;
 }
 
 .contact .contact-info {
-    /* position: relative;s */
     width: 100%;
     margin-bottom: 30px;
 }
@@ -821,13 +783,8 @@ a:focus {
     color: #F29559;
 }
 
-/* .contact .contact-info p a {
-    color: #666666;
-} */
-
 .contact .contact-info p a:hover {
     color: #F29559;
-    /* text-decoration: none; */
 }
 
 .contact .social {
@@ -846,9 +803,6 @@ a:focus {
     transition: all .3s;
 }
 
-.contact .social a:last-child {
-    /* margin-right: 0; */
-}
 
 .contact .social a:hover {
     color: #F29559;
@@ -856,7 +810,6 @@ a:focus {
 }
 
 .contact .form {
-    /* position: relative; */
     width: 100%;
     margin-bottom: 30px;
 }
@@ -887,7 +840,6 @@ a:focus {
 /*********** Footer CSS ***********/
 /**********************************/
 .footer {
-    /* position: relative; */
     width: 100%;
     padding: 30px 30px 0 30px;
     background: #F2D492;
@@ -896,7 +848,6 @@ a:focus {
 .footer p {
     color: #202C39;
     font-weight: 600;
-    /* margin: 0; */
 }
 
 .footer a {
